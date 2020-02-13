@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="446.0" prefWidth="361.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Back" />
+      <Button layoutX="295.0" layoutY="14.0" mnemonicParsing="false" text="Logout" />
+      <Button layoutX="309.0" layoutY="89.0" mnemonicParsing="false" text="&gt;" />
+      <Button layoutX="27.0" layoutY="89.0" mnemonicParsing="false" text="&lt;" />
+      <ListView layoutX="11.0" layoutY="232.0" prefHeight="206.0" prefWidth="338.0" />
+      <ImageView fitHeight="150.0" fitWidth="219.0" layoutX="80.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../OneDrive/Pictures/Background/orion%20nebula.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="284.0" layoutY="268.0" mnemonicParsing="false" text="Delete" />
+      <Button layoutX="228.0" layoutY="268.0" mnemonicParsing="false" text="Edit" />
+      <Button layoutX="279.0" layoutY="201.0" mnemonicParsing="false" text="Add Tag" />
+      <Text layoutX="29.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tag Type: Tag Value" />
+      <Text layoutX="29.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tag Type: Tag Value" />
+      <Button layoutX="228.0" layoutY="238.0" mnemonicParsing="false" text="Edit" />
+      <Button layoutX="284.0" layoutY="238.0" mnemonicParsing="false" text="Delete" />
+      <Text layoutX="16.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Caption:" />
+      <Text layoutX="17.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date time of Capture:" />
+      <Text layoutX="16.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tags:" />
+      <Button layoutX="269.0" layoutY="167.0" mnemonicParsing="false" text="Edit Caption" />
+   </children>
+</AnchorPane>

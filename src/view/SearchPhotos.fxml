@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="351.0" prefWidth="580.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SearchController">
+   <children>
+      <Button fx:id="back" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#Back" prefHeight="19.0" prefWidth="76.0" text="Back" />
+      <DatePicker fx:id="startDate" layoutX="67.0" layoutY="134.0" prefHeight="31.0" prefWidth="150.0" />
+      <Text fx:id="dateText1" layoutX="73.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start Date: ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="dateText2" layoutX="249.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="End Date:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <DatePicker fx:id="endDate" layoutX="244.0" layoutY="134.0" prefHeight="31.0" prefWidth="129.0" />
+      <Text fx:id="tagText1" layoutX="19.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tag 1:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="tagText3" layoutX="19.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tag 2:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <ToggleButton fx:id="or" layoutX="399.0" layoutY="134.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="46.0" text="Or" />
+      <TextField fx:id="tagVal1" layoutX="281.0" layoutY="181.0" prefHeight="25.0" prefWidth="167.0" />
+      <TextField fx:id="tagVal2" layoutX="281.0" layoutY="223.0" prefHeight="25.0" prefWidth="167.0" />
+      <Text layoutX="19.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name Search Album:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="searchAlbumText" layoutX="162.0" layoutY="276.0" prefHeight="25.0" prefWidth="190.0" />
+      <Button fx:id="searchButton" layoutX="370.0" layoutY="274.0" mnemonicParsing="false" onAction="#SearchPhotos" prefHeight="35.0" prefWidth="174.0" text="Search" />
+      <ComboBox fx:id="tagComb1" layoutX="67.0" layoutY="181.0" prefWidth="150.0" />
+      <ComboBox fx:id="tagComb2" layoutX="67.0" layoutY="223.0" prefWidth="150.0" />
+      <Text fx:id="tagText2" layoutX="230.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Value:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="tagText4" layoutX="230.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Value:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <RadioButton fx:id="rangeOfDate" layoutX="238.0" layoutY="33.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="114.0" selected="true" text="Date Range">
+         <toggleGroup>
+            <ToggleGroup fx:id="searchBy" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="tagsSearch" layoutX="399.0" layoutY="33.0" mnemonicParsing="false" text="Tags" toggleGroup="$searchBy" />
+      <Text layoutX="116.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search By">
+         <font>
+            <Font name="SansSerif Regular" size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
